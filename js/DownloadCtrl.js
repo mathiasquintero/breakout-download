@@ -12,7 +12,6 @@ app.controller('DownloadCtrl', function($scope, $routeParams, $http) {
             a.href = url;
             document.body.appendChild(a);
             a.click();
-            delete a;
         } else {
             console.log("No media!");
         }
