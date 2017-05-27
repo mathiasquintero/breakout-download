@@ -9,6 +9,7 @@ app.controller('DownloadCtrl', function($scope, $routeParams, $http) {
             var a = document.createElement('a');
             a.download = url; // Set the file name.
             a.style.display = 'none';
+            a.href = url;
             document.body.appendChild(a);
             a.click();
             delete a;
