@@ -6,7 +6,7 @@ app.controller('DownloadCtrl', function($scope, $routeParams, $http) {
             var sizes = media[0].sizes;
             var size = sizes[sizes.length - 1];
             var url = size.url;
-            window.location = url;
+            window.open(url, 'Download'); 
         } else {
             console.log("No media!");
         }
